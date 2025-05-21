@@ -21,7 +21,6 @@ if ($searchNama !== '' || $searchAlamat !== '' || $searchHobi !== '') {
 //    die($sql);
 } else {
     $sql = "SELECT pe.nama, pe.alamat, ho.hobi FROM person pe join hobi ho on pe.id = ho.person_id";
-
 }
 
 $result = $conn->query($sql);
